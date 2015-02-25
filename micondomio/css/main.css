@@ -75,7 +75,7 @@ body {
 }
 
 .cta {
-  background: url("../../dist/img/cta.jpg") no-repeat;
+  background: url("../../micondomio/img/cta.jpg") no-repeat;
   height: 500px;
   background-size: cover;
   padding: 10% 0;
@@ -118,7 +118,7 @@ body {
 
 .fts-owners {
   color: #ffffff;
-  background: #0192B9 url("../../dist/img/fts-owners-img.jpg") no-repeat 720px;
+  background: #0192B9 url("../../micondomio/img/fts-owners-img.jpg") no-repeat 720px;
 }
 @media (max-width: 768px) {
   .fts-owners {
@@ -150,7 +150,7 @@ body {
 }
 
 .fts-users {
-  background: #ffffff url("../../dist/img/fts-users-img.jpg") no-repeat;
+  background: #ffffff url("../../micondomio/img/fts-users-img.jpg") no-repeat;
   color: #0192B9;
 }
 @media (max-width: 768px) {
