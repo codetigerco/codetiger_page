@@ -3,4 +3,115 @@
 {% load staticfiles %}
 
 {% block content %}
+
+
+<div class="cover uk-height-viewport">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid">
+			<div class="uk-width-1-1">
+				 <div class="uk-text-center">
+				 	<p>Hi, we're <img src="{% static 'dist/img/logo-dark.png' %}" class="cover-logo"></p>
+				 	<p>We make <b>beautiful</b> software</p>
+				 	<a href="#about" class="uk-button cover-button" data-uk-smooth-scroll>Learn how</a>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav class="uk-navbar uk-navbar-attached" data-uk-sticky data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}"> 
+	<div class="uk-navbar-flip">
+	    <ul class="uk-navbar-nav">
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#services">Services</a></li>
+	        <li><a href="#work">Work</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	    </ul>
+	</div>
+</nav>
+
+<div class="uk-container-center uk-container" >
+	<div class="uk-grid" id="about">
+		<div class="uk-width-1-1 uk-text-center who" data-uk-scrollspy="{cls:'uk-animation-fade', delay:300}" >
+			<p class="dark-header">WHO WE ARE</p>
+			<p class="dark-subheader">We're a team of web aficionados that write, think and dream about code. We love what we do and we're in the business of making ideas a reality.</p>
+		</div>
+	</div>
+</div>
+
+<div class="dark-bg">
+	<div class="uk-container-center uk-container" >
+		<div class="uk-grid" id="services">
+			<div class="uk-width-1-1 uk-text-center what">
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<p class="clear-header">WHAT WE DO</p>
+						<p class="clear-subheader">We're experts at building web and mobile applications customized to your every need.</p>
+					</div>
+				</div>
+				<div class="uk-grid" data-uk-scrollspy="{cls:'uk-animation-slide-left uk-invisible', target:'.feature', delay:300}">
+					<div class="uk-width-1-3">
+						<div class="feature uk-scrollspy-init-inview uk-invisible">
+							<i class="uk-icon-laptop feature-icon"></i>
+							<p class="header">Web</p>
+							<p class="feature-text">We were born on the web. We create amazing web applicacions for breakfast.</p>
+						</div>
+					</div>
+					<div class="uk-width-1-3 ">
+						<div class="feature uk-scrollspy-init-inview uk-invisible">
+							<i class="uk-icon-eye feature-icon"></i>
+							<p class="header">UX/UI</p>
+							<p class="feature-text">With an eye for detail, we make sure your user experience is always top-notch.</p>
+						</div>						
+					</div>
+					<div class="uk-width-1-3">
+						<div class="feature uk-scrollspy-init-inview uk-invisible">
+							<i class="uk-icon-mobile feature-icon"></i>
+							<p class="header">Mobile</p>
+							<p class="feature-text">Ready to go mobile? We make beautiful experiences that fit in your pocket.</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="uk-container-center uk-container" >
+	<div class="uk-grid" id="work" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'img', delay:200}" >
+		<div class="uk-width-1-1 uk-text-center who">
+			<p class="dark-header">WHO WE WORK WITH</p>
+			<p class="dark-subheader">We have worked with non-profits, startups, big CO' and goverment agencies. If you're not on the list we would like to add you.</p>
+			<ul class="client-list">
+				<li><img src="{% static 'dist/img/logos/claimsolver.png' %}" class="uk-invisible"></li>
+				<li><img src="{% static 'dist/img/logos/instrumentos.png' %}" class="uk-invisible"></li>
+				<li><img src="{% static 'dist/img/logos/stancedata.png' %}" class="uk-invisible"></li>				
+				<br>
+				<li><img src="{% static 'dist/img/logos/educa.png' %}" class="uk-invisible"></li>
+				<li><img src="{% static 'dist/img/logos/rdemprende.png' %}" class="uk-invisible"></li>
+				<li><img src="{% static 'dist/img/logos/startupe.png' %}" class="uk-invisible"></li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="dark-bg footer">
+	<div class="uk-container uk-container-center" >
+		<div class="uk-grid uk-text-center" id="contact">
+			<div class="uk-width-1-3">
+				<img src="{% static 'dist/img/logo-clear.png' %}">
+			</div>
+			<div class="uk-width-1-3">
+				<p>Write us: <a href="mailto:hello@codetiger.co" target="_blank">hello@codetiger.co</a></p>
+			</div>
+			<div class="uk-width-1-3">
+				<p>Call us: 781.247.5020</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 {% endblock content %}
