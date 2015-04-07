@@ -1,0 +1,166 @@
+
+/*******************************
+           Variables
+/*******************************
+
+$wtext-color: #fff
+$text-color: #444
+$primary-color: #D97809
+$secondary-color: #2D303A
+$third-color: #F79E38
+
+
+/*******************************
+           General
+/*******************************
+
+html
+	font: normal 14px / 40px 'Lato', sans-serif
+	font-weight: 300
+	background: #FAFAFA
+
+/*******************************
+           Index
+/*******************************
+
+// Common
+
+.header 
+	font-size: 42px
+	font-weight: bold
+
+.htext
+	font-size: 28px
+	padding: 0% 15%
+
+.dark-bg
+	background: $secondary-color
+	color: $wtext-color
+
+.dark-header
+	@extend .header
+	color: $primary-color
+
+.dark-subheader
+	@extend .htext
+	color: $text-color
+
+
+.clear-header
+	@extend .header
+	color: $wtext-color
+
+.clear-subheader
+	@extend .htext
+	color: $wtext-color
+
+
+// Cover
+
+.cover 
+	background: url('/static/dist/img/cover2.jpg') no-repeat
+	background-size: cover
+	color: $secondary-color
+	padding: 150px 0px
+
+	p 
+		font-size: 72px
+		font-weight: 400
+
+		@media (max-width: 768px)
+			font-size: 50px
+
+.cover-logo
+	width: 450px
+
+.cover-button 
+	text-shadow: none
+	color: $secondary-color
+	border: 2px solid $secondary-color
+	background: transparent
+	padding: 10px 30px
+	font-size: 20px
+	margin-top: 40px
+	font-weight: 400
+
+	&:hover
+		background: transparent
+		color: $wtext-color
+		border: 2px solid #fff
+
+
+// Navbar
+
+.uk-navbar 
+	background: $secondary-color
+
+.uk-navbar-nav 
+	li
+		a 
+			text-shadow: none
+			color: $wtext-color
+		&:hover
+			a 
+				background: $primary-color
+				color: $secondary-color
+
+.uk-navbar-nav > li.uk-active > a,
+.uk-navbar-nav > li > a:focus,
+	background: $primary-color
+	color: $secondary-color
+
+// who
+
+.who 
+	padding: 250px 0px
+
+
+// what
+
+.what
+	padding: 200px 0px
+
+.feature-text
+	font-size: 20px
+
+.feature-icon
+	font-size: 100px
+	color: $third-color
+
+// who
+
+.who
+	padding: 200px 0px
+
+.client-list 
+	margin: 0px
+	padding: 0px
+	list-style-type: none
+	text-align: center
+
+	li 
+		display: inline
+
+		img 
+			margin: 20px
+
+
+// footer
+
+.footer 
+	padding: 30px
+
+	p 
+		font-size: 18px
+		margin: 40px 0px
+
+	a 
+		color: $primary-color
+
+	img 
+		width: 300px
+
+
+
+
+
