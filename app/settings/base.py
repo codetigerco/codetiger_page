@@ -78,6 +78,24 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+
+# List of finder classes that know how to find static files in
+# various locations.
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
 
 #TEMPLATE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
@@ -95,9 +113,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     # Your stuff: custom template context processers go here
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
+    # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
-    join(BASE_DIR, 'templates'),
+    os.path.join(BASE_DIR, 'templates'),
 )
 
 TEMPLATE_LOADERS = (
